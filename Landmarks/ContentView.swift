@@ -13,16 +13,23 @@ struct ContentView: View {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
-            VStack{
+            VStack(alignment:.leading){
                 Text("Turtle Rock")
                     .font(.title)
                     .foregroundColor(.black)
                     .multilineTextAlignment(.leading)
+            
+                HStack {
+                    Text("Joshua Tree National Park")
+                        .font(.subheadline)
+                    Spacer()
+                    Text("California").font(.subheadline)
+                }
             }
-            Text("Joshua Tree National Park")
-                .font(.subheadline)
+            .padding()
+            
         }
-        .padding()
+        
     }
 }
 
